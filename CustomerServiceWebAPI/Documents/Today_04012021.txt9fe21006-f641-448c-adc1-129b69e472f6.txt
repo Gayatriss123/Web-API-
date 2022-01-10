@@ -1,0 +1,22 @@
+web api 2 controller
+proper routing
+postman CRUD
+Auth token
+token based 
+
+
+
+20
+21
+23 imp
+24
+25
+26
+27
+
+
+corps 15
+
+AIY82Mjt81Dw01TiyZPv/1gPkTewywzP4b535UDdSI75hLqjFURiNSC+kkHTZ6oXVw==
+
+ "access_token": "fEm-hg6nf7FTelxlxi741Kw1sbE1xxBTG2JeK1s_3ISEldte4hGdmmWfKZiSOWSgbagBTbdiaIY8xI0CMQ9H4B88wtEtxevoU3N8E9Z0t9-rno5YG1CtoCS6vNT6OGlgXTPjUTPpCvZdrCQTwwziy4BuXWPHLbME3VDn2fMYEOM6kdzNuXgiDLJS_doGtuihJLeD5d8SeDu_Xmdl5u7Pr-S6F0lJG0OAm9eRivY4LLqrqEUt0LJUkQTANv9kuD33UDxrAJMyYk0D26KsOqPP_rY9CSLAwronToyAnZcdNkLyweBvhGVoBE12NleaTyzDh2K7CsPXK4akS1jZ8HOnCbhXYggymqJQsRiDP1KQmoFRbGragekibzwwrUl1QOvKLXomRwNjGRuxROU8kA_xTN0jB0UhnN7gKpxu9K9IdOA91b45XdMF5H0mu0iDGCNaJAzNfb4-YN4k0oKRa5T00oKUCWlZn7ty9HjECk2ajIw",

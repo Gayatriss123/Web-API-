@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+
+}
+
+<h2>Index</h2>
+
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("AddFileInDatabase", "FileUploadUsingHttpPostedFileBase", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+
+            <input type="file" name="postedFile" />
+            <br />
+        
+            <input type="submit" id="btn1" class="btn btn-default" value="Upload" />
+        }
+        <br /><br />
+        <a href="/FileUploadUsingHttpPostedFileBase/DownloadImage">DownLoad Image from Database</a>
+
+    </div>
+</body>
+</html>
+
+
+
+

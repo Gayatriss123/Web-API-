@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "FileUpload";
+}
+
+<h2>FileUpload</h2>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<h2>fileupload</h2>
+<div>
+
+    <div class="form-group">
+        <input type="file" id="myfile" multiple />
+    </div>
+    <input id="btn1" class="btn btn-default" type="button" value="Upload" />
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#btn1').click(function () {
+            if ($('#myfile').val() == '') {
+                alert('Please select file');
+                return;
+            }
+           
+            var fileUpload = $("#myfile").get(0);
+            var files = fileUpload.files;
+            var formData = new FormData();
+            // if there are multiple files , loop through each files
+            for (var i = 0; i < files.length; i++) {
+                formData.append(files[i].name, files[i]);
+            }
+            //var file = $('#myfile')[0];
+            //formData.append('file', file.files[0]);
+            $.ajax({
+                url: '/Home/FileUpload',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (d) {
+                    alert('file is uploaded successfully')
+                },
+                error: function () {
+                    alert('Some thing went wrong');
+                }
+            });
+        });
+    });
+</script>

@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "DownloadImage";
+}
+
+<h2>DownloadImage</h2>
+
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        @{int Rcrd = 1002;}
+
+
+        @foreach (string file in ViewBag.Images)
+        {
+        <h4>@Html.ActionLink(file, "GetFile/" + Rcrd++)</h4>
+        }
+
+        @if (Rcrd == 1)
+        {
+            <h2>
+                There is No file for Downloading from the Database
+            </h2>
+        }
+
+    </div>
+    <br /><br />
+    <a href="/FileUploadInDatabase/Index">Back</a>
+</body>
+</html>
