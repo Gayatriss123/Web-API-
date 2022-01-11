@@ -92,6 +92,7 @@ namespace CustomerServiceWebAPI.Controllers
         }
 
         [HttpPost]
+        [Route("Post")]
         public GenericModel<PersonalDataDetail> AddNewCustomer([FromBody]PersonalDataDetail person)
         {
             try

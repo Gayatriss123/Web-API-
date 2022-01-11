@@ -50,6 +50,7 @@ namespace CustomerServiceWebAPI.Controllers
         }
 
         [HttpPost]
+        [Route("Post")]
         public IHttpActionResult AddNewCustomer([FromBody]PersonalDataDetail person)
         {
             try
@@ -70,7 +71,8 @@ namespace CustomerServiceWebAPI.Controllers
         }
 
         [HttpDelete]
-        public IHttpActionResult DeleteCustomer(int id)
+        [Route("{id:int}")]
+        public IHttpActionResult DeleteCustomer([FromUri]int id)
         {
             try
             {
@@ -96,7 +98,8 @@ namespace CustomerServiceWebAPI.Controllers
         }
 
         [HttpPut]
-        public IHttpActionResult UpdateCustomerDetails(int id, PersonalDataDetail person)
+        [Route("{id:int}")]
+        public IHttpActionResult UpdateCustomerDetails([FromUri]int id, [FromBody]PersonalDataDetail person)
         {
             try
             {

@@ -10,20 +10,22 @@ namespace CustomerServiceWebAPI.Controllers
 {
     public class AuthenticationTokenController : Controller
     {
-       
+       //This method returns Registration Form View
         public ActionResult RegisterCustomer()
         {
             return View();
         }
-        
+        //This method returns Login Form View
         public ActionResult Login()
         {
             return View();
         }
+        //This method returns View which shows Customer Table Data on button click
         public ActionResult CustomerData()
         {
             return View();
         }
+        //This method returns View which shows list of Customer Names on button click
         public ActionResult CustomerNames()
         {
             return View();

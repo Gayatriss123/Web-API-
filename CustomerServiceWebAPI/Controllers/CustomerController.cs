@@ -11,6 +11,7 @@ namespace CustomerServiceWebAPI.Controllers
     [RoutePrefix("api/Customer")]
     public class CustomerController : ApiController
     {
+        //On GetAllCustomers() method basic authentication is implemented, so username and password will required to execute this method
         [HttpGet]
         [Authorize]
         [Route("")]
@@ -75,6 +76,7 @@ namespace CustomerServiceWebAPI.Controllers
         }
 
         [HttpPost]
+        [Route("Post")]
         public HttpResponseMessage AddNewCustomer([FromBody]PersonalDataDetail person)
         {
             try

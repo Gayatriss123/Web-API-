@@ -69,6 +69,7 @@ namespace CustomerServiceWebAPI.Controllers
             }
         }
         [HttpPost]
+        [Route("Post")]
         public OptimizeGenericModel<PersonalDataDetail> AddNewCustomer([FromBody]PersonalDataDetail person)
         {
             try
